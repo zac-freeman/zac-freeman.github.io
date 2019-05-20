@@ -25,3 +25,11 @@ h1, h2, h3, h4, span {
     width:200px;
     height: 200px;
 }
+
+#landing-name {
+    font-size: 26pt;
+}
+
+#landing-title {
+    font-size: 16pt;
+}
