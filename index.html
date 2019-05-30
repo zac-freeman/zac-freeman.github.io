@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-        <link rel="stylesheet" type="text/css" href="src/style.css">
-        <title>Zac Freeman</title>
-    </head>
+	<head>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<link rel="stylesheet" type="text/css" href="src/style.css">
+		<title>Zac Freeman</title>
+	</head>
 
-    <body>
-        <div class="landing-content">
-            <img src="src/face.jpeg" class="landing-face">
-            <span id="landing-name">Zac Freeman</span>
-            <span id="landing-title">Software Developer</span>
-        </div>
-    </body>
+	<body>
+		<div include-html="src/navbar/navbar.html"></div>
+		<div include-html="src/landing-content/landing.html"></div>
+	</body>
 
-    <script src="src/typing-effect.js"></script>
+	<script src="src/include-html.js"></script>
+	<script>loadHTML()</script>
 </html>

@@ -1,35 +1,14 @@
 * {
-    font-family: sans-serif;
+	font-family: sans-serif;
 }
 
 body {
-    background-color: cornflowerblue;
-    border: 0;
-    padding: 0;
-    margin: 0;
+	background-color: cornflowerblue;
+	border: 0;
+	padding: 0;
+	margin: 0;
 }
 
 h1, h2, h3, h4, span {
-    color: lightyellow;
-}
-
-.landing-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.landing-face {
-    width:200px;
-    height: 200px;
-}
-
-#landing-name {
-    font-size: 26pt;
-}
-
-#landing-title {
-    font-size: 16pt;
+	color: lightyellow;
 }
