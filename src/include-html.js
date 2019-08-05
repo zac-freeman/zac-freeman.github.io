@@ -1,9 +1,6 @@
 // loadHTML(): For each <div> containing an attribute of the form `include-html = "path/to/content"`,
 //             set innerHTML of said <div> with content at path,
 //             and execute javascript contained within <script> tags.
-//
-// TODO: run scripts contained within new innerHTML content when it is loaded
-//       filter out all comments and debug statements from code before it is loaded, to optimize download times
 function loadHTML() {
 	let elements = document.getElementsByTagName("div");
 
