@@ -1,16 +1,100 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-		<link rel="stylesheet" type="text/css" href="src/style.css">
-		<title>Zac Freeman</title>
-	</head>
 
-	<body>
-		<div include-html="src/navbar/navbar.html"></div>
-		<div include-html="src/landing-content/landing.html"></div>
-	</body>
+<head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<link rel="stylesheet" type="text/css" href="src/style.css">
+	<title>Zac Freeman</title>
+</head>
 
-	<script src="src/include-html.js"></script>
-	<script>loadHTML()</script>
+<body>
+	<style>
+		#header {
+			display: table;
+			margin: 16px;
+		}
+
+		#burger-wrapper {
+			position: absolute;
+			display: table;
+			background-color: #fbeee4;
+			padding: 4px;
+			outline: 4px solid #414A4C;
+			box-shadow: 7px 7px 5px grey;
+			margin: auto;
+		}
+
+		#burger-wrapper:hover {
+			background-color: #414A4C;
+		}
+
+		#burger-wrapper:hover>.sub-burger {
+			background-color: #fbeee4;
+		}
+
+		#burger-wrapper:focus {
+			background-color: #fbeee4;
+		}
+
+		#burger-wrapper:focus>.sub-burger {
+			background-color: #414A4C;
+		}
+
+		#burger-wrapper:focus>#burger-meat {
+			display: block;
+		}
+
+		.sub-burger {
+			width: 32px;
+			height: 4px;
+			transition: 0.1s;
+			background-color: #414A4C;
+			margin: 6px 2px;
+		}
+
+		#burger-meat {
+			display: none;
+			padding: 12px 48px 12px 12px;
+			font-size: 24pt;
+		}
+
+		#main-content {
+			color: #414A4C;
+			font-size: 48pt;
+			padding: 10% 25%;
+		}
+
+		#main-content>#me> {
+/* figure out how to orient this all appropriately */
+		}
+	</style>
+
+	<div id="header">
+		<div id="burger-wrapper" tabindex="0">
+			<div class="sub-burger"></div>
+			<div class="sub-burger"></div>
+			<div class="sub-burger"></div>
+			<div id="burger-meat">
+				<h4>Zac</h4>
+				<h4>Freeman</h4>
+				<br />
+				<span>Posts</span>
+				<br />
+				<span>Contact</span>
+				<br />
+				<span>Resume</span>
+			</div>
+		</div>
+	</div>
+
+	<div id="main-content">
+		<div id="me">
+			<img src="face.jpeg" alt="My face">
+			<h4>Zac</h4>
+			<h4>Freeman</h4>
+		</div>
+		<span>Give me a break! It's a work in progress.</span>
+	</div>
+</body>
+
 </html>
