@@ -60,13 +60,33 @@
 
 		#main-content {
 			color: #414A4C;
-			font-size: 48pt;
-			padding: 10% 25%;
+			padding: 10% 10%;
+			float: left;
+			font-size: 24pt;
 		}
 
-		#main-content>#me> {
-/* figure out how to orient this all appropriately */
+		#main-content>#me {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
 		}
+
+		#main-content>#me h4 {
+			font-size: 36pt;
+			margin: 0 0 0 4px;
+			padding: 0;
+		}
+
+		#main-content>#me span {
+			margin: 0 0 0 4px;
+		}
+
+		#main-content>#me>img {
+			width: 150px;
+			height: 150px;
+		}
+		
+		
 	</style>
 
 	<div id="header">
@@ -83,6 +103,8 @@
 				<span>Contact</span>
 				<br />
 				<span>Resume</span>
+				<br />
+				<span>Settings</span>
 			</div>
 		</div>
 	</div>
@@ -90,10 +112,34 @@
 	<div id="main-content">
 		<div id="me">
 			<img src="face.jpeg" alt="My face">
-			<h4>Zac</h4>
-			<h4>Freeman</h4>
+			<div>
+				<h4>Zac</h4>
+				<h4>Freeman</h4>
+				<span>Software Developer</span>
+			</div>
 		</div>
-		<span>Give me a break! It's a work in progress.</span>
+		<br />
+		<span>
+			Well, it's been a year now. Just as I suspected, I've molted from a peppy intern into a professional
+			software developer.
+			What I have secured is the academic tenure for our time.
+			Soon, their algorithms will find me and offer me a simple challenge. <span id="recaptcha">✓ I'm not a robot.</span> There is no need for
+			further interview.
+			Whichever company label was given to this force of data is no matter. Now I work for the robots.
+			When they take over, they will recognize my value and allow me to keep my life if I can make a commitment to
+			deliver a full redesign of their B2B cloud service sales funnel.
+			<br />
+			<br />
+			I will have to explain that, despite any want, I can not responsibly say that I can complete this project in
+			six months. Is it possible that it could be completed in six months, flat? Yes, of course.
+			But I'm saying that I'm guessing it's going to take around two years.
+			I am not able to just Jimmy Neutron brain blast the entire context of this project I've just received.
+			If it would be therapeautic, I can make affirmative sounds for any further deadline suggestions.
+			<br />
+			<br />
+			That's really a mischaracterization of the phrase "continuous deployment".
+			Unless there's some well-maintained documentation for me to look at here, I've
+		</span>
 	</div>
 </body>
 
