@@ -3,6 +3,7 @@
 
 <head>
 	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 	<link rel="stylesheet" type="text/css" href="src/style.css">
 	<title>Zac Freeman</title>
 </head>
@@ -10,8 +11,8 @@
 <body>
 	<style>
 		#header {
-			display: table;
 			margin: 16px;
+			height: 44px;
 		}
 
 		#burger-wrapper {
@@ -59,10 +60,8 @@
 		}
 
 		#main-content {
-			color: #414A4C;
-			padding: 10% 10%;
-			float: left;
-			font-size: 24pt;
+			margin: 16px auto;
+			max-width: 720px;
 		}
 
 		#main-content>#me {
@@ -73,20 +72,37 @@
 
 		#main-content>#me h4 {
 			font-size: 36pt;
-			margin: 0 0 0 4px;
+			margin: 0 0 0 8px;
 			padding: 0;
 		}
 
+		#main-content span {
+			font-size: 18pt
+		}
+
 		#main-content>#me span {
-			margin: 0 0 0 4px;
+			margin: 0 0 0 8px;
 		}
 
 		#main-content>#me>img {
-			width: 150px;
-			height: 150px;
+			width: 130px;
+			height: 130px;
 		}
-		
-		
+
+		@media only screen and (max-width: 540px) {
+			#main-content>#me h4 {
+				font-size: 24pt;
+			}
+
+			#main-content span {
+				font-size: 12pt
+			}
+
+			#main-content>#me>img {
+				width: 85px;
+				height: 85px;
+			}
+		}
 	</style>
 
 	<div id="header">
@@ -98,13 +114,11 @@
 				<h4>Zac</h4>
 				<h4>Freeman</h4>
 				<br />
-				<span>Posts</span>
+				<a href="src/posts.html">Posts</a>
 				<br />
-				<span>Contact</span>
+				<a href="src/contact.html">Contact</a>
 				<br />
-				<span>Resume</span>
-				<br />
-				<span>Settings</span>
+				<a href="src/resume.html">Resume</a>
 			</div>
 		</div>
 	</div>
@@ -123,7 +137,8 @@
 			Well, it's been a year now. Just as I suspected, I've molted from a peppy intern into a professional
 			software developer.
 			What I have secured is the academic tenure for our time.
-			Soon, their algorithms will find me and offer me a simple challenge. <span id="recaptcha">✓ I'm not a robot.</span> There is no need for
+			Soon, their algorithms will find me and offer me a simple challenge. <span id="recaptcha">✓ I'm not a
+				robot.</span> There is no need for
 			further interview.
 			Whichever company label was given to this force of data is no matter. Now I work for the robots.
 			When they take over, they will recognize my value and allow me to keep my life if I can make a commitment to
