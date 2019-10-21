@@ -16,6 +16,10 @@ span, h4, a, a:visited {
 	margin: 0;
 }
 
+svg {
+	fill: #414A4C;
+}
+
 a:hover 
 {
 	text-decoration:none; 
