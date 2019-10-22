@@ -1,0 +1,114 @@
+/* general */
+body {
+	background-color: #fbeee4;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+span, h4, a, a:visited {
+	color: #414A4C;
+	font-family: fantasy;
+	padding: 0;
+	margin: 0;
+}
+
+svg {
+	fill: #414A4C;
+}
+
+a:hover 
+{
+	text-decoration:none; 
+	cursor:pointer;  
+}
+
+
+/* header */
+#header {
+	margin: 16px;
+	height: 44px;
+}
+
+#burger-wrapper {
+	position: absolute;
+	display: table;
+	background-color: #fbeee4;
+	padding: 4px;
+	outline: 4px solid #414A4C;
+	box-shadow: 6px 6px 4px grey;
+	transition-duration: 0.3s;
+	margin: auto;
+}
+
+#burger-wrapper:hover,
+#burger-wrapper:focus {
+	box-shadow: 9px 9px 6px grey;
+}
+
+#burger-wrapper:focus>#burger-meat {
+	display: block;
+}
+
+#burger-meat:hover {
+	display: block;
+}
+
+.sub-burger {
+	width: 32px;
+	height: 4px;
+	background-color: #414A4C;
+	margin: 6px 2px;
+}
+
+#burger-meat {
+	display: none;
+	padding: 12px 48px 12px 12px;
+	font-size: 24pt;
+}
+
+
+/* main content */
+#main-content {
+	margin: 16px auto;
+	max-width: 720px;
+}
+
+#main-content>#me {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#main-content>#me h4 {
+	font-size: 36pt;
+	padding: 0;
+}
+
+#main-content span {
+	font-size: 18pt
+}
+
+#main-content>#me>img {
+	margin: 0 8px 0 0;
+	width: 130px;
+	height: 130px;
+}
+
+@media only screen and (max-width: 540px) {
+	#main-content>#me h4 {
+		font-size: 24pt;
+	}
+
+	#main-content span {
+		font-size: 12pt
+	}
+
+	#main-content>#me>img {
+		width: 85px;
+		height: 85px;
+	}
+}
