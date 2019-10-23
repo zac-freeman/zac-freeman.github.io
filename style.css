@@ -18,14 +18,14 @@ span, h4, a, a:visited {
 
 svg {
 	fill: #414A4C;
+	height: 24px;
+	width: 24px;
 }
 
-a:hover 
-{
+a:hover {
 	text-decoration:none; 
 	cursor:pointer;  
 }
-
 
 /* header */
 #header {
@@ -111,4 +111,21 @@ a:hover
 		width: 85px;
 		height: 85px;
 	}
+}
+
+/* content links (links inside the main content) */
+.content-link {
+	padding: 11px 6px 6px 6px;
+	box-shadow: 6px 6px 4px grey;
+	outline: 2px solid #414A4C;
+	transition-duration: 0.3s;
+}
+
+.content-link:hover {
+	box-shadow: 9px 9px 6px grey;
+}
+
+.content-link svg {
+	display: inline-block;
+	vertical-align: text-bottom;
 }
