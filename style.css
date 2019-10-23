@@ -11,21 +11,21 @@ a {
 
 span, h4, a, a:visited {
 	color: #414A4C;
-	font-family: fantasy;
+	font-family: sans-serif;
 	padding: 0;
 	margin: 0;
 }
 
 svg {
 	fill: #414A4C;
+	height: 1.5em;
+	width: 1.5em;
 }
 
-a:hover 
-{
+a:hover {
 	text-decoration:none; 
 	cursor:pointer;  
 }
-
 
 /* header */
 #header {
@@ -67,14 +67,14 @@ a:hover
 #burger-meat {
 	display: none;
 	padding: 12px 48px 12px 12px;
-	font-size: 24pt;
+	font-size: 2em;
 }
 
 
 /* main content */
 #main-content {
 	margin: 16px auto;
-	max-width: 720px;
+	max-width: 800px;
 }
 
 #main-content>#me {
@@ -84,31 +84,41 @@ a:hover
 }
 
 #main-content>#me h4 {
-	font-size: 36pt;
+	font-size: 3em;
 	padding: 0;
 }
 
 #main-content span {
-	font-size: 18pt
+	font-size: 1.5em
 }
 
 #main-content>#me>img {
 	margin: 0 8px 0 0;
-	width: 130px;
-	height: 130px;
+	width: 8.1em;
+	height: 8.1em;
 }
 
-@media only screen and (max-width: 540px) {
-	#main-content>#me h4 {
-		font-size: 24pt;
-	}
 
-	#main-content span {
-		font-size: 12pt
-	}
+/* content links (links inside the main content) */
+.content-link {
+	padding: 11px 6px 6px 6px;
+	box-shadow: 6px 6px 4px grey;
+	outline: 2px solid #414A4C;
+	transition-duration: 0.3s;
+}
 
-	#main-content>#me>img {
-		width: 85px;
-		height: 85px;
+.content-link:hover {
+	box-shadow: 9px 9px 6px grey;
+}
+
+.content-link svg {
+	display: inline-block;
+	vertical-align: text-bottom;
+}
+
+
+@media only screen and (max-width: 1100px) {
+	#main-content {
+		margin: 16px 16px;
 	}
 }
