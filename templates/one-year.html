@@ -1,31 +1,12 @@
+IDENTITY("one-year")
+LOCATION("one-year.html")
 <!DOCTYPE html>
 <html>
 
-<head>
-	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>Zac Freeman</title>
-</head>
+DEPENDENCY("head")
 
 <body>
-	<!-- header -->
-	<div id="header">
-		<div id="burger-wrapper" tabindex="0">
-			<div class="sub-burger"></div>
-			<div class="sub-burger"></div>
-			<div class="sub-burger"></div>
-			<div id="burger-meat">
-				<a href="index.html">
-					<h4>Zac</h4>
-					<h4>Freeman</h4>
-				</a>
-				<br />
-				<a href="posts.html">Posts</a>
-				<br />
-				<a href="zac-freeman-resume.pdf" target="_blank">Resume</a>
-			</div>
-		</div>
-	</div>
+	DEPENDENCY("header")
 
 	<div id="main-content">
 		<div id="me">
