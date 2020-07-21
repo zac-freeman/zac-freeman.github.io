@@ -464,7 +464,7 @@ label.margin-toggle:not(.sidenote-number) {
         width: 85%;
     }
 
-    img {
+    figure > img {
         width: 100%;
     }
 }
