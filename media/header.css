@@ -1,0 +1,43 @@
+#header {
+	height: 44px;
+}
+
+#burger-wrapper {
+	position: absolute;
+	display: table;
+	padding: 4px;
+	outline: 4px solid #111;
+	background-color: #fffff8;
+	box-shadow: 6px 6px 4px #111;
+	transition-duration: 0.3s;
+	margin: auto;
+}
+
+#burger-wrapper:hover,
+#burger-wrapper:focus {
+	box-shadow: 9px 9px 6px #111;
+}
+
+#burger-wrapper:focus>#burger-meat {
+	display: block;
+}
+
+#burger-meat:hover {
+	display: block;
+}
+
+.sub-burger {
+	width: 32px;
+	height: 4px;
+	margin: 6px 2px;
+	background-color:#111;
+}
+
+#burger-meat {
+	display: none;
+	padding: 12px 48px 12px 12px;
+}
+
+#burger-meat>h3 {
+	margin: 0.5em;
+}

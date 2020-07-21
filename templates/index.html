@@ -8,26 +8,21 @@ DEPENDENCY("head")
 <body>
 	DEPENDENCY("header")
 
-	<div id="main-content">
-		<div id="me">
-			<img src="media/face.jpg" alt="My face">
-			<div>
-				<h4>Zac</h4>
-				<h4>Freeman</h4>
-				<span>Software Developer</span>
-			</div>
-		</div>
-		<br />
-		<a href="https://www.linkedin.com/in/zac-freeman/" target="_blank" class="content-link">
-			DEPENDENCY("linkedin-svg")
-			<span>https://www.linkedin.com/in/zac-freeman/</span>
-		</a>
-		<br />
-		<br />
-		<a href="https://github.com/zac-freeman" target="_blank" class="content-link">
-			DEPENDENCY("github-svg")
-			<span>https://github.com/zac-freeman/</span>
-		</a>
+	<article>
+		<section>
+			<figure>
+				<img src="media/face.jpg" alt="My face">
+			</figure>
+			<h1>Zac Freeman</h1>
+			<p class="subtitle">Software Developer</p>
+
+			<h3><a href="https://www.linkedin.com/in/zac-freeman/" target="_blank">
+				DEPENDENCY("linkedin-svg") https://www.linkedin.com/in/zac-freeman/
+			</a></h3>
+			<h3><a href="https://github.com/zac-freeman" target="_blank">
+				DEPENDENCY("github-svg") https://github.com/zac-freeman/
+			</a></h3>
+	</article>
 </body>
 
 </html>
