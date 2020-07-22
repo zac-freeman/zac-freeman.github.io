@@ -1,0 +1,64 @@
+IDENTITY("n-factorial")
+LOCATION("n-factorial.html")
+<!DOCTYPE html>
+<html>
+
+DEPENDENCY("head")
+
+<body>
+	DEPENDENCY("header")
+
+	<article>
+		<h1>The fastest way to count the trailing zeroes in n!</h1>
+		<p class="subtitle">I'm not excited it's just a factorial</p>
+		<section>
+			<p>
+				The first time I encountered some form of this problem was during an interview for a job I desperately needed. I was prompted to write a program that would count the number of trailing zeroes in a given factorial. It turned out that some of the factorials were too large to fit in a Java Integer. How could you count the number of zeroes without the zeroes laid out to be counted? Driven forward by the thought of moving back in with my dad and his second family, I came up with something that could do just that.
+			</p>
+			<p>
+				The algorithm, in its polished, ready-to-submit form took only five lines of code and determined the number of trailing zeroes in less time than it took to find the factorial. For an hour, I had poured my energy into creating it and I was satisfied. I was convinced once more that I had chosen the right major and that what I had learned could propel me into a career in software. In the end, what they were looking for was a familiarity with Java and its "BigInteger" package. Simmer on that moment, that is what Software Development is.
+			</p>
+		</section>
+		<section>
+			<h2>Naive Solution</h2>
+			<p>
+				The most intuitive solution involves calculating the factorial for a given number <code>n</code>, then counts zeroes from the end, stopping when this nonzero digit is encountered.
+			</p>
+			<p>
+				Generally, a factorial is represented as <code>n!</code> for a given number <code>n</code>, and can be calculated from
+				<pre><code>
+n! = 1 * 2 * 3 * ... * n
+				</code></pre>
+			</p>
+			<p>
+				More specifically,
+				<pre><code>
+3! = 1 * 2 * 3 = 6
+4! = 1 * 2 * 3 * 4 = 24
+5! = 1 * 2 * 3 * 4 * 5 = 120
+				</code></pre>
+			</p>
+			<p>
+				And this pattern continues for any integer between 1 and positive infinity. Huh? What's that? Something about non-positive, or non-whole number factorials? Next topic.
+			</p>
+			<h3>How to Count</h3>
+			<p>
+				Once the value of the factorial has been determined, it is a simple task of using one's fleshy appendages to count up the trailing zeroes in the calculated value. But a computer has no fleshly appendages to count with, so how does it do it? One option is to divide your number by <code>10</code>, then check if the remainder of that division is zero, if it is, one trailing zero has been counted and this process can be looped through once again. In Python, this looks something like
+				<pre><code>
+trailingZeroes = 0
+
+while(number % 10 == 0) {
+	number = number / 10
+	trailingZeroes = trailingZeroes + 1
+}
+				</pre></code>
+			</p>
+			<p>
+				That's it!
+			</p>
+
+		</section>
+	</article>
+</body>
+
+</html>
