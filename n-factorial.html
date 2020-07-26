@@ -61,20 +61,36 @@ n! = 1 * 2 * 3 * ... * n
 			</p>
 			<h3>How to Count</h3>
 			<p>
-				Once the value of the factorial has been determined, it is a simple task of using one's fleshy appendages to count up the trailing zeroes in the calculated value. But a computer has no fleshly appendages to count with, so how does it do it? One option is to divide your number by <code>10</code>, then check if the remainder of that division is zero, if it is, one trailing zero has been counted and this process can be looped through once again. In Python, this looks something like
+				Once the value of the factorial has been determined, it is a simple task of using one's fleshy appendages to count up the trailing zeroes in the calculated value. But a computer has no fleshly appendages to count with, so how does it do it?
+			</p>
+			<p>
+One process involves dividing the number by <code>10</code>, checking if the remainder of that division is <code>0</code>, and if it is, incrementing the count of trailing zeroes by <code>1</code> and repeating the process with the quotient of that division. If the remainder is not <code>0</code>, the process ends and what is left is the number of trailing zeroes counted. In Python, this looks something like
 				<pre><code>
-trailingZeroes = 0
+def countTrailingZeroes(number)
+	count = 0
 
-while(number % 10 == 0) {
-	number = number / 10
-	trailingZeroes = trailingZeroes + 1
-}
+	while(number % 10 == 0)
+		number = number / 10
+		count = count + 1
+
+	return count
 				</pre></code>
 			</p>
 			<p>
-				That's it!
+				There are other ways to do this, one method being converting it to a string and counting the instances of the zero character, blah blah, % is the remainder operator, etc, etc.
 			</p>
+		</section>
+		<section>
+			<h2>Cynical Solution</h2>
+			<p>
+				Finding the number of trailing zeroes in <code>n!</code> without evaulating the factorial leverages some properties of trailing zeroes. A trailing zero is created by multiplying a number by 10 (sort of), and a trailing zero can not be lost from whole number multiplication.
 
+				A trailing zero in a number is a factor of 10 in a number. 10 is 5 times 2. 2 is more than twice as small as 5, meaning it would appear more than twice as often on a number line starting from one. n! is the product of the numbers on that line from 1 to n. There is more than enough 2s to go around for each 5, so each factor of 5 in the product can be combined with a factor of two for a factor of 10, equivalent to a trailing zero. Therefore, knowing just the number of factors of five in the product of the factorial is enough to determine the number of trailing zeroes.
+
+				But how to count that number of factors of 5? Fleshy appendages, yes, but also by counting the number of multiples of 5 that appear in the aforementioned ordered congo line of numbers. Turns out dividing by 5 and rounding down will tell you the number of multiples of 5 that you would find by counting them all lined up. If the matter of fact statement was not convincing enough, consider that between each multiple of 5 and the next would be a space (or difference) of 5: from 5 to 10, from 10 to 15, etc. How many times could that space of 5 fit, without overlap, from 1 to n?
+
+				I must admit, I've lied to you. You may have noticed. You weren't ready for the truth but now you are. The number of multiples of 5 is not exactly the same as the number of factors of 5 here. Take 25 (TM); a single instance of a multiple of 5, that is made up of two factors of 5, same goes for 50 or 75. Luckily, all these types of not-so-special cases can be identified by their additional factors of 5, so 25, 125... need to cover division like in earlier case, and how multiples of 5^i are counted once as multiples of 5, once as multiples of 25... then its done!
+			</p>
 		</section>
 	</article>
 </body>
