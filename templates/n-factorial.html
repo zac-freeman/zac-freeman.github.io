@@ -46,7 +46,7 @@ n! = 1 * 2 * 3 * ... * n
 				Once the value of the factorial has been determined, it is a simple task of using one's fleshy appendages to count up the trailing zeroes in the calculated value. But a computer has no fleshly appendages to count with, so how does it do it?
 			</p>
 			<p>
-One process involves dividing the number by <code>10</code>, checking if the remainder of that division is <code>0</code>, and if it is, incrementing the count of trailing zeroes by <code>1</code> and repeating the process with the quotient of that division. If the remainder is not <code>0</code>, the process ends and what is left is the number of trailing zeroes counted. In Python, this looks something like
+One process is to first divide the number evenly by <code>10</code> to get a quotient and a remainder. If the remainder of that division is <code>0</code>, count <code>1</code> trailing zero and repeat the process by dividing the quotient by <code>10</code>. If the remainder is not <code>0</code>, end the process by summing up the total number of trailing zeroes counted during the process. In Python, this looks something like
 				<pre><code>
 def countTrailingZeroes(number)
 	count = 0
