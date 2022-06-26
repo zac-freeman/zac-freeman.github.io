@@ -1,0 +1,39 @@
+IDENTITY("rsvp")
+LOCATION("rsvp.html")
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		DEPENDENCY("common-head")
+		<script src="scripts/rsvp.js"></script>
+	</head>
+	<body>
+		DEPENDENCY("header")
+		<div class="top">
+			<h1 class="title">RSVP</h1>
+			<p id='instructions'>Please provide your name below, and indicate whether or not you will be able to attend our wedding. You may RSVP on behalf of members of your family unit that have also been invited to our wedding. Please do not RSVP on behalf of someone that has not been invited. Please do not RSVP on behalf of someone that you do not know.</p>
+		</div>
+		<div class="mids">
+			<form id='rsvp_form' onsubmit='rsvp(get_values(first_names), get_values(last_names), get_responses(this), song_requests.value); return false;'>
+				<div id='guest_list'>
+					<input type='text' name='first_names' placeholder='First name' required> 
+					<input type='text' name='last_names' placeholder='Last name' required>
+					<input type='radio' name='response0' value='accept' required>
+					<label for='accept'>Accept</label>
+					<input type='radio' name='response0' value='decline' required>
+					<label for='decline'>Decline</label>
+				</div>
+				<br>
+				<button type='button' onclick='add_guest()'>Add Guest</button>
+				<br>
+				<label for'song_requests'>What songs would you like to hear at our wedding?</label>
+				<br>
+				<textarea id='song_requests' name='rsvp_form' rows='4' cols='50'>Darude - Sandstorm</textarea>
+				<br>
+				<input type='submit' value='Submit'>
+			</form>
+			<div id='thank_you_message' style='display: none'><img src='media/hamster_dance.gif' style='width:48px;height:48px;'/><p>RSVP received! Thank you.</p><img src='media/hamster_dance.gif' style='width:48px;height:48px;'/></div>
+			<p id='error_message' style='display: none'>Something went wrong. Please try again, or RSVP with us directly.</p>
+		</div>
+		<div class="bottom"></div>
+	</body>
+</html>

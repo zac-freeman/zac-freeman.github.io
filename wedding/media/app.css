@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.top, .mids, .bottom {
+  background-color: #f3efec;
+/* min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+/* justify-content: center; */
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.top {
+  text-align: right;
+  background-size: cover;
+  background-image: url("flower_top.jpg");
+}
+
+.mids {
+  font-size: 2vw;
+  padding: 20% 0;
+  text-align: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("flower_mids.jpg");
+}
+
+.mids h1 {
+  margin: 10px;
+}
+
+.bottom {
+  padding: 10% 5% 20% 5%;
+  text-align: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-image: url("flower_bottom.jpg");
+}
+
+h1, p, label, .navbar li a {
+  font-weight: normal;
+  color: #2a6166;
+  font-family: 'Brush Script MT';
+}
+
+.title {
+  font-size: 64px;
+  margin: 20% 20%;
+  letter-spacing: 6px;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(243, 239, 236);
+  border-bottom: 1px solid black;
+  width: 100vw;
+}
+
+.navbar li {
+  display: inline;
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+.navbar li a:hover {
+  background-color: rgb(255,229,236);
+  color: #9e1d2f;
+  font-family: cursive;
+  font-size: larger;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 20%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
