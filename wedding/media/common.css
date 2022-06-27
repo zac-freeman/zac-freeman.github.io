@@ -1,0 +1,74 @@
+:root {
+	--ruby: #CC0025;
+	--deep-pink: #CA53B4;
+	--pink: #E0A4D5;
+	--teal: #148686;
+	--deep-teal: #277C72;
+	--emerald: #5A8762;
+	--peridot: #789B31;
+	--diamond: #F5F5F5;
+	--beige: #FFFBEB;
+	--soft-black: #313639;
+}
+
+body {
+	margin: 0;
+	background-color: var(--beige);
+	color: var(--soft-black);
+	text-align: center;
+}
+
+.eucalyptus {
+	width: 100%;
+}
+
+#sapp-house {
+	width: 90%;
+}
+
+#schedule {
+	margin: auto;
+	max-width: 600px;
+	text-align: center;
+}
+
+.navbar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: var(--beige);
+	border-bottom: 1px solid black;
+	width: 100vw;
+}
+
+.navbar li {
+	display: inline;
+	float: left;
+}
+
+.navbar li a {
+	display: block;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	letter-spacing: 2px;
+	color: var(--soft-black);
+}
+
+.navbar li a:hover {
+	background-color: var(--pink);
+	color: var(--ruby);
+	font-family: cursive;
+}
+
+.card {
+	background-color: var(--diamond);
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	width: 20%;
+}
+
+.card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
