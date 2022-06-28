@@ -1,0 +1,29 @@
+.navbar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: var(--beige);
+	border-bottom: 1px solid black;
+	width: 100vw;
+}
+
+.navbar li {
+	display: inline;
+	float: left;
+}
+
+.navbar li a {
+	display: block;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	letter-spacing: 2px;
+	color: var(--soft-black);
+}
+
+.navbar li a:hover {
+	background-color: var(--pink);
+	color: var(--ruby);
+	font-family: cursive;
+}

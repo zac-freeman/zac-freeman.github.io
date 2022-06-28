@@ -53,18 +53,18 @@ function add_guest() {
 	response++;
 	let guest_list = document.getElementById('guest_list');
 
-	const line_break = document.createElement('br');
-
 	let first_name_text = document.createElement('input');
 	first_name_text.type = 'text';
 	first_name_text.name = 'first_names';
 	first_name_text.placeholder = 'First name';
+	first_name_text.size = '10';
 	first_name_text.required = true;
 
 	let last_name_text = document.createElement('input');
 	last_name_text.type = 'text';
 	last_name_text.name = 'last_names';
 	last_name_text.placeholder = 'Last name';
+	last_name_text.size = '10';
 	last_name_text.required = true;
 
 	let accept_radio = document.createElement('input');
@@ -87,7 +87,8 @@ function add_guest() {
 	decline_label.for = 'decline';
 	decline_label.innerHTML = 'Decline';
 
-	guest_list.appendChild(line_break);
+	guest_list.appendChild(document.createElement('br'));
+	guest_list.appendChild(document.createElement('br'));
 	guest_list.appendChild(first_name_text);
 	guest_list.append(' ');
 	guest_list.appendChild(last_name_text);

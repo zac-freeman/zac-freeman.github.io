@@ -12,7 +12,7 @@
 }
 
 body {
-	margin: 0;
+	margin: 10px;
 	background-color: var(--beige);
 	color: var(--soft-black);
 	text-align: center;
@@ -26,40 +26,35 @@ body {
 	width: 90%;
 }
 
-#schedule {
+#schedule, #rsvp-content, #registry-content {
 	margin: auto;
 	max-width: 600px;
+}
+
+#schedule {
 	text-align: center;
 }
 
-.navbar {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: var(--beige);
-	border-bottom: 1px solid black;
-	width: 100vw;
+#rsvp-content, #registry-content {
+	text-align: left;
 }
 
-.navbar li {
-	display: inline;
-	float: left;
+#registry-list {
+	text-align: left;
+	display: flex;
+	justify-content: center;
 }
 
-.navbar li a {
-	display: block;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	letter-spacing: 2px;
-	color: var(--soft-black);
+#thank_you_message {
+	justify-content:center;
 }
 
-.navbar li a:hover {
-	background-color: var(--pink);
+#error_message {
 	color: var(--ruby);
-	font-family: cursive;
+	font-weight: bold;
+	background-color: var(--diamond);
+	padding: 0 5px 0 5px;
+	border: 5px solid var(--ruby);
 }
 
 .card {

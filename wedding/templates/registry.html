@@ -2,24 +2,25 @@ IDENTITY("registry")
 LOCATION("registry.html")
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-	DEPENDENCY("common-head")
-  </head>
-  <body>
-	DEPENDENCY("header")
-    <div class="top">
-      <h1 class="title">Crowdfund our Happiness</h1>
-    </div>
-    <div class="bottom">
-        <div class="card">
-			<p>Sweeten our Honeymoon</p>
-        </div>
-        <div class="card">
-			<p>Furnish our Apartment</p>
-        </div>
-        <div class="card">
-			<p>Push our Agenda</p>
-        </div>
-    </div>
-  </body>
+	<head>
+		DEPENDENCY("common-head")
+	</head>
+	<body>
+		DEPENDENCY("header")
+		<h1 class="title">Crowdfund our Happiness</h1>
+		<div id="registry-content">
+			<p>Right now, each of us lives in a fully furnished apartment. We have two couches, two blenders, two sets dinnerware, but only one money. For that reason, we are asking for contributions towards our honeymoon, our home, or the charitable causes that are most important to us.</p>
+			<div id="registry-list">
+				<div class="card">
+					<p>Sweeten our Honeymoon</p>
+				</div>
+				<div class="card">
+					<p>Furnish our Apartment</p>
+				</div>
+				<div class="card">
+					<p>Push our Agenda</p>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
