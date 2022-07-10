@@ -14,7 +14,6 @@
 body {
 	margin: 10px;
 	background-color: var(--beige);
-	color: var(--soft-black);
 	text-align: center;
 	font-family: 'Times New Roman';
 }
@@ -58,24 +57,6 @@ body {
 	text-align: left;
 	display: flex;
 	justify-content: center;
-}
-
-#rsvp-content {
-	margin: auto;
-	text-align: left;
-	max-width: 500px;
-}
-
-#thank_you_message {
-	justify-content:center;
-}
-
-#error_message {
-	color: var(--ruby);
-	font-weight: bold;
-	background-color: var(--diamond);
-	padding: 0 5px 0 5px;
-	border: 5px solid var(--ruby);
 }
 
 .card {

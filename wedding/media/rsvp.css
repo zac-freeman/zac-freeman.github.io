@@ -1,0 +1,25 @@
+body {
+	background-image: url("../media/arches.jpg");
+	background-position: center 20px;
+	background-repeat: repeat-x;
+	color: var(--soft-black);
+}
+
+#rsvp-content {
+	margin: auto;
+	text-align: left;
+	max-width: 500px;
+	padding-top: 200px;
+}
+
+#thank_you_message {
+	justify-content:center;
+}
+
+#error_message {
+	color: var(--ruby);
+	font-weight: bold;
+	background-color: var(--diamond);
+	padding: 0 5px 0 5px;
+	border: 5px solid var(--ruby);
+}
