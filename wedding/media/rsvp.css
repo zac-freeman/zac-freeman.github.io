@@ -1,8 +1,10 @@
 body {
 	background-image: url("../media/arches.jpg");
-	background-position: center 20px;
-	background-repeat: repeat-x;
+	background-position: center -200px;
+	background-size: 1500px auto;
+	background-repeat: no-repeat;
 	color: var(--soft-black);
+	font-family: "Poiret One", serif;
 }
 
 #rsvp-content {
@@ -10,6 +12,20 @@ body {
 	text-align: left;
 	max-width: 500px;
 	padding-top: 200px;
+}
+
+#title-container {
+	text-align: center;
+}
+
+#title-container p {
+	font-size: 80px;
+	font-weight: bold;
+	margin: 0;
+}
+
+#instructions {
+	font-size: 20px;
 }
 
 #thank_you_message {
@@ -22,4 +38,9 @@ body {
 	background-color: var(--diamond);
 	padding: 0 5px 0 5px;
 	border: 5px solid var(--ruby);
+}
+
+@font-face {
+	font-family: "Poiret One";
+	src: url("../media/poiret-one.ttf");
 }
