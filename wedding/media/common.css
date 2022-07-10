@@ -27,7 +27,7 @@ body {
 	width: 50%;
 }
 
-#schedule, #rsvp-content, #registry-content {
+#schedule, #registry-content {
 	margin: auto;
 	max-width: 1000px;
 }
@@ -50,20 +50,20 @@ body {
 	font-size: min(3vw, 30px);
 }
 
-#rsvp-content, #registry-content {
+#registry-content {
 	text-align: left;
-}
-
-.arch {
-	border-radius: 50% 50% 0 0;
-	padding: 20px;
-	border: 5px solid var(--deep-teal);
 }
 
 #registry-list {
 	text-align: left;
 	display: flex;
 	justify-content: center;
+}
+
+#rsvp-content {
+	margin: auto;
+	text-align: left;
+	max-width: 500px;
 }
 
 #thank_you_message {
