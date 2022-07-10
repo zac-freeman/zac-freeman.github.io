@@ -5,6 +5,7 @@ body {
 	background-repeat: no-repeat;
 	color: var(--soft-black);
 	font-family: "Poiret One", serif;
+	font-weight: bold;
 }
 
 #rsvp-content {
