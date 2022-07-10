@@ -16,6 +16,7 @@ body {
 	background-color: var(--beige);
 	color: var(--soft-black);
 	text-align: center;
+	font-family: 'Times New Roman';
 }
 
 .eucalyptus {
@@ -23,20 +24,40 @@ body {
 }
 
 #sapp-house {
-	width: 90%;
+	width: 50%;
 }
 
 #schedule, #rsvp-content, #registry-content {
 	margin: auto;
-	max-width: 600px;
+	max-width: 1000px;
 }
 
 #schedule {
 	text-align: center;
 }
 
+#names {
+	margin: 0;
+	font-size: min(10vw, 100px);
+}
+
+.big-text {
+	font-size: min(5vw, 50px);
+	margin: 150px 0 150px 0;
+}
+
+.medium-text {
+	font-size: min(3vw, 30px);
+}
+
 #rsvp-content, #registry-content {
 	text-align: left;
+}
+
+.arch {
+	border-radius: 50% 50% 0 0;
+	padding: 20px;
+	border: 5px solid var(--deep-teal);
 }
 
 #registry-list {
