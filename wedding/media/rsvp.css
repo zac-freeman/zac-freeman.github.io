@@ -1,14 +1,14 @@
 body {
 	background-image: url("../media/arches.jpg");
 	background-position: center -200px;
-	background-size: 1500px auto;
+	background-size: 1200px auto;
 	background-repeat: no-repeat;
 }
 
 p, label, button, input, textarea {
 	font-family: "Poiret One", serif;
 	font-weight: bold;
-	color: var(--soft-black);
+	color: var(--deep-teal);
 }
 
 #rsvp-content {
@@ -21,10 +21,11 @@ p, label, button, input, textarea {
 
 #title-container {
 	text-align: center;
+    margin-bottom: 80px;
 }
 
 #title-container p {
-	font-size: 80px;
+	font-size: min(25vw, 125px);
 	margin: 0;
 }
 
