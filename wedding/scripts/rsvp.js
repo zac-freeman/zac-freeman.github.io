@@ -87,19 +87,23 @@ function add_guest() {
 	decline_label.for = 'decline';
 	decline_label.innerHTML = 'Decline';
 
+	let options = document.createElement('span');
+	options.className = 'options';
+	options.appendChild(accept_radio);
+	options.append(' ');
+	options.appendChild(accept_label);
+	options.append(' ');
+	options.appendChild(decline_radio);
+	options.append(' ');
+	options.appendChild(decline_label);
+	
 	guest_list.appendChild(document.createElement('br'));
 	guest_list.appendChild(document.createElement('br'));
 	guest_list.appendChild(first_name_text);
 	guest_list.append(' ');
 	guest_list.appendChild(last_name_text);
 	guest_list.append(' ');
-	guest_list.appendChild(accept_radio);
-	guest_list.append(' ');
-	guest_list.appendChild(accept_label);
-	guest_list.append(' ');
-	guest_list.appendChild(decline_radio);
-	guest_list.append(' ');
-	guest_list.appendChild(decline_label);
+	guest_list.append(options);
 }
 
 function get_values(inputs) {

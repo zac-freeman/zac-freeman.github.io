@@ -1,14 +1,25 @@
 body {
-	background-image: url("../media/arches.jpg");
+	background-image: url("../media/concentric-half-circles.png"), url("../media/parallel-lines.png");
 	background-position: center -200px;
 	background-size: 1200px auto;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat, repeat-y;
 }
 
-p, label, button, input, textarea {
+p, label, textarea {
 	font-family: "Poiret One", serif;
 	font-weight: bold;
 	color: var(--deep-teal);
+}
+
+button, input {
+	font-family: "Poiret One", serif;
+	font-weight: bold;
+}
+
+textarea {
+	width: 100%;
+	height: 100px;
+	resize: none;
 }
 
 #rsvp-content {
@@ -31,6 +42,10 @@ p, label, button, input, textarea {
 
 #instructions {
 	font-size: 20px;
+}
+
+.options {
+	white-space: nowrap;
 }
 
 #thank_you_message {
