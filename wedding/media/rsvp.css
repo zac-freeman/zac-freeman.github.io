@@ -52,6 +52,11 @@ textarea {
 	justify-content:center;
 }
 
+.hamster {
+	width: auto;
+	height: 48px;
+}
+
 #error_message {
 	color: var(--ruby);
 	font-weight: bold;

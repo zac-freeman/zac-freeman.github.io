@@ -18,63 +18,6 @@ body {
 	font-family: 'Times New Roman';
 }
 
-.eucalyptus {
-	width: 90%;
-}
-
-#schedule, #registry-content {
-	margin: auto;
-	padding: 10px;
-	max-width: 600px;
-}
-
-#schedule {
-	text-align: center;
-}
-
-#names {
-	margin: 10px 0 10px 0;
-	width: 70%;
-}
-
-#middle-text {
-	font-size: min(3vw, 18px);
-	margin: 40px 0 40px 0;
-    letter-spacing: 2px;
-}
-
-#sapp-house {
-    color: var(--soft-black);
-    text-decoration: none;
-}
-
-#sapp-house p {
-    margin: 0;
-    font-size: min(6vw, 36px);
-}
-
-.bottom-text {
-    font-size: min(3vw, 18px);
-    letter-spacing: 2px;
-}
-
-#registry-content {
-	text-align: left;
-}
-
-#registry-list {
-	text-align: left;
-	display: flex;
-	justify-content: center;
-}
-
-.card {
-	background-color: var(--diamond);
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-	transition: 0.3s;
-	width: 20%;
-}
-
-.card:hover {
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+p, h1 {
+	color: var(--soft-black);
 }

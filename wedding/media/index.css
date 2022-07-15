@@ -1,0 +1,38 @@
+.flowers {
+	width: 90%;
+}
+
+#schedule {
+	margin: auto;
+	padding: 10px;
+	max-width: 600px;
+}
+
+#schedule {
+	text-align: center;
+}
+
+#names {
+	margin: 10px 0 10px 0;
+	width: 70%;
+}
+
+#middle-text {
+	font-size: min(3vw, 18px);
+	margin: 40px 0 40px 0;
+    letter-spacing: 2px;
+}
+
+#sapp-house {
+    text-decoration: none;
+}
+
+#sapp-house p {
+    margin: 0;
+    font-size: min(6vw, 36px);
+}
+
+.bottom-text {
+    font-size: min(3vw, 18px);
+    letter-spacing: 2px;
+}
