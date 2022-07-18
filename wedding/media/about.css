@@ -13,9 +13,49 @@ body {
 }
 
 .subtitle {
-	font-size: min(3vw, 36px);
+	font-size: min(6vw, 72px);
 }
 
 span {
 	background-color: rgba(255, 251, 235, 0.8);
+}
+
+#now-playing {
+	height: 20px;
+	width: 300px;
+	margin: auto;
+	padding: 10px;
+	overflow: hidden;
+	position: relative;
+}
+
+#now-playing div {
+	width: 400%;
+	position: absolute;
+	overflow: hidden;
+	animation: scroll 10s linear infinite;
+}
+
+#now-playing span {
+	float: left;
+	width: 50%;
+	background-color: black;
+	color: #20C20E;
+	font-family: "Digital Seven";
+	font-size: 24pt;
+	padding: 4px 0 4px 0;
+}
+
+@keyframes scroll {
+	0% {
+		left: 0%;
+	}
+	100% {
+		left: -200%;
+	}
+}
+
+@font-face {
+	font-family: "Digital Seven";
+	src: url("../media/digital-7.ttf");
 }
