@@ -61,7 +61,7 @@ textarea {
 	color: var(--ruby);
 	font-weight: bold;
 	background-color: var(--diamond);
-	padding: 0 5px 0 5px;
+	padding: 5px 0 0 5px;
 	border: 5px solid var(--ruby);
 }
 

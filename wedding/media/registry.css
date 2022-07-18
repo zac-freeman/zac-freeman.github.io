@@ -17,7 +17,6 @@
 }
 
 .card {
-	background-color: var(--diamond);
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	width: 400px;
 	height: 400px;
@@ -58,15 +57,18 @@
 
 #honeymoon-card {
 	background-image: linear-gradient(rgba(255, 251, 235, 0.8), rgba(255, 251, 235, 0.8)), url("../media/lone-cypress.jpg");
-	background-size: 100%;
+	background-position: center;
+	background-size: cover;
 }
 
 #furniture-card {
 	background-image: linear-gradient(rgba(255, 251, 235, 0.8), rgba(255, 251, 235, 0.8)), url("../media/cat-tree.jpg");
-	background-size: 100%;
+	background-position: center;
+	background-size: cover;
 }
 
 #agenda-card {
 	background-image: linear-gradient(rgba(255, 251, 235, 0.8), rgba(255, 251, 235, 0.8)), url("../media/agendas.jpg");
-	background-size: 100%;
+	background-position: center;
+	background-size: cover;
 }
