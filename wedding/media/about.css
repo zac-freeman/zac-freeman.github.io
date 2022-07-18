@@ -1,0 +1,21 @@
+body {
+	background-image: url("../media/tiny-flowers.png");
+}
+
+#about-content {
+	max-width: 1200px;
+	padding: 10px;
+	margin: auto;
+}
+
+#title {
+	font-size: min(6vw, 72px);
+}
+
+.subtitle {
+	font-size: min(3vw, 36px);
+}
+
+span {
+	background-color: rgba(255, 251, 235, 0.8);
+}

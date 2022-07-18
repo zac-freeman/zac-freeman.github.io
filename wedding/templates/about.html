@@ -2,13 +2,20 @@ IDENTITY("about")
 LOCATION("about.html")
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-	DEPENDENCY("common-head")
-  </head>
-  <body>
-	DEPENDENCY("header")
-    <div class="top">
-      <h1 class="title">What else is about it?</h1>
-    </div>
-  </body>
+	<head>
+		DEPENDENCY("common-head")
+		<link rel="stylesheet" href="media/about.css" />
+	</head>
+	<body>
+		DEPENDENCY("header")
+		<div id="about-content">
+			<p id="title"><span>WELCOME TO OUR WEDDING</span></p>
+			<p>Our karaoke song!</p>
+			<audio controls autoplay>
+				<source src="media/home.mp3" type="audio/mpeg">
+			</audio>
+			<p class="subtitle"><span>About Us</span></p>
+			<p class="subtitle"><span>About Them</span></p>
+		</div>
+	</body>
 </html>

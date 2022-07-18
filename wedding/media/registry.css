@@ -5,6 +5,10 @@
 	text-align: left;
 }
 
+#title {
+	font-size: min(10vw, 40px);
+}
+
 #registry-list {
 	display: flex;
 	flex-direction: row;
@@ -15,18 +19,31 @@
 .card {
 	background-color: var(--diamond);
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-	transition-duration: 40s;
 	width: 400px;
 	height: 400px;
 	padding: 10px;
 	margin: 10px;
+	border: 2px solid var(--deep-teal);
+	border-radius: 16px;
 	z-index: 0;
 }
 
 .card:hover {
-	box-shadow: 80px 80px 8px 8px rgba(0,0,0,0.2);
-	transform: scale(2, 2);
+	animation: expand .5s infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear;
 	z-index: 100;
+}
+
+@keyframes expand {
+  0% {
+    transform: scale(1, 1);
+	box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  100% {
+    transform: scale(1.01, 1.01);
+	box-shadow: 8px 8px 8px 8px rgba(0,0,0,0.2);
+  }
 }
 
 .card-title {
@@ -37,4 +54,19 @@
 
 .card-body {
 	text-align: left;
+}
+
+#honeymoon-card {
+	background-image: linear-gradient(rgba(255, 251, 235, 0.8), rgba(255, 251, 235, 0.8)), url("../media/lone-cypress.jpg");
+	background-size: 100%;
+}
+
+#furniture-card {
+	background-image: linear-gradient(rgba(255, 251, 235, 0.8), rgba(255, 251, 235, 0.8)), url("../media/cat-tree.jpg");
+	background-size: 100%;
+}
+
+#agenda-card {
+	background-image: linear-gradient(rgba(255, 251, 235, 0.8), rgba(255, 251, 235, 0.8)), url("../media/agendas.jpg");
+	background-size: 100%;
 }
