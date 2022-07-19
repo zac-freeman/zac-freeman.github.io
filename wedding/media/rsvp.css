@@ -1,6 +1,6 @@
 body {
 	background-image: url("../media/concentric-half-circles.png"), url("../media/parallel-lines.png");
-	background-position: center -200px;
+	background-position: center -150px;
 	background-size: 1000px auto;
 	background-repeat: no-repeat, repeat-y;
 }

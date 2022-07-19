@@ -40,3 +40,8 @@ body {
     font-size: min(3vw, 18px);
     letter-spacing: 2px;
 }
+
+.map {
+	width: 90%;
+	height: 400px;
+}
