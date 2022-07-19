@@ -1,7 +1,7 @@
 body {
 	background-image: url("../media/concentric-half-circles.png"), url("../media/parallel-lines.png");
 	background-position: center -200px;
-	background-size: 1200px auto;
+	background-size: 1000px auto;
 	background-repeat: no-repeat, repeat-y;
 }
 
@@ -26,8 +26,8 @@ textarea {
 	margin: auto;
     padding: 10px;
 	text-align: left;
-	max-width: 500px;
-	padding-top: 200px;
+	max-width: 420px;
+	padding-top: 160px;
 }
 
 #title-container {

@@ -9,11 +9,11 @@ body {
 }
 
 #title {
-	font-size: min(6vw, 72px);
+	font-size: 56px;
 }
 
 .subtitle {
-	font-size: min(6vw, 72px);
+	font-size: 48px;
 }
 
 span {
