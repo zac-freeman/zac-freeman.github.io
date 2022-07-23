@@ -1,0 +1,64 @@
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage{enumitem}
+\setitemize{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt,label={-}}
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\address{Zac Freeman \hfill}
+\address{zpf14@my.fsu.edu \hfill}
+
+\begin{document}
+
+\begin{rSection}{Education}
+    {\bf B.S. in Physics \textbar\ Florida State University \hfill August 2014 - December 2017}
+    \begin{itemize}
+        \item GPA: 3.889
+        \item Minor: Mathematics
+        \item Additional Coursework: Data Structures and Algorithms, Partial Differential Equations, Object Oriented Programming, Communication in Physics
+    \end{itemize}
+\end{rSection}
+
+\begin{rSection}{Experience}
+    {\bf Systems Engineer \textbar\ AutoZone \hfill January 2020 - Present}
+    \begin{itemize}
+        \item Maintain and harden C++ pinpad firmware and custom Linux distro deployed to ~20000 devices.
+        \item Integrated a C/C++ purpose-built browser into a C/C++ payroll software to prompt employees with surveys to meet new California payroll compliance standards
+        \item Configured a containerized proxy and load balancer, and developed a C++ Kafka consumer to be distributed in a Linux distro
+    \end{itemize}
+
+    {\bf Software Developer II \textbar\ Frontdoor \hfill October 2018 - December 2019}
+    \begin{itemize}
+        \item Led the software development for a security initiative, implementing reCAPTCHA for login and registration, session token handling, email verification, and ADFS SSO into a legacy ATG B2B site
+        \item Integrated a 3rd party payment processor to meet new PCI standards for a legacy ATG B2B site
+        \item Designed and built a microservice with Go and Docker to enable B2B clients to place orders in database without interacting with legacy ATG B2B site
+    \end{itemize}
+    
+    {\bf Research Assistant \textbar\ UAH Heliophysics \hfill May 2017 - August 2017}
+    \begin{itemize}
+        \item Created a model of gamma rays in a magnetic trap with the goal of reproducing real world data
+        \item Used C++, CUDA, and the Runge-Kutta method to simulate many parallel gamma ray systems on a selection of NVIDIA GPUs
+        \item Analyzed data produced to discover novel behavior of cosmic rays inside expanding magnetic traps
+    \end{itemize}
+    
+    {\bf Research Assistant \textbar\ FSU Math Department \hfill June 2016 - August 2016}
+    \begin{itemize}
+        \item Created simulation of the flow of two liquids in a closed system with the goal of confirming the accuracy of results published in \textit{Physica}
+        \item Used MATLAB and numerical methods for partial differential equations to generate 1D and 2D simulations and analyzed the physical accuracy of the data using energy conservation and the maximality principle
+        \item Results from simulations contributed to the paper \textit{Maximally Preserving Finite Difference Schemes for the Allen-Cahn Equation using Operator Splitting}, presented at SIAM-SEAS 2017
+    \end{itemize}
+\end{rSection}
+
+\begin{rSection}{Skills}
+    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+    Languages & C++, \LaTeX, CUDA, MATLAB, SQL, Python, Javascript \\
+    Software & Linux, Windows, Docker \\
+    Soft Skills & Written and Spoken Communication, Pragmatic Perspective, Quick Learner \\
+    \end{tabular}
+\end{rSection}
+
+\end{document}
