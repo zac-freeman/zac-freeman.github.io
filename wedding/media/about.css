@@ -63,3 +63,41 @@ span {
 	font-family: "Digital Seven";
 	src: url("../media/digital-7.ttf");
 }
+
+.slideshow {
+    width: 100%;
+    display: flex;
+    min-height: 220px;
+}
+
+.about_us_slide, .about_them_slide {
+    display: none;
+    width: auto;
+    padding: 4px;
+	background-color: rgba(255, 251, 235, 0.8);
+}
+
+.slide-text {
+    color: var(--soft-black);
+    text-align: left;
+    display: inline-block;
+    float: right;
+    width: 65%;
+}
+
+.slide-image {
+    float: left;
+    width: 30%;
+    display: inline-block;
+}
+
+.slide-arrow {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: var(--soft-black);
+	background-color: rgba(255, 251, 235, 0.8);
+    font-weight: bold;
+    font-size: 20px;
+    user-select: none;
+}

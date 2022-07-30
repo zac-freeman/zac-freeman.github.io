@@ -9,6 +9,7 @@
 <title>Savannah & Zac</title>
 
 		<link rel="stylesheet" href="media/about.css" />
+		<script src="scripts/slideshow.js" defer></script>
 	</head>
 	<body>
 		<ul class="navbar">
@@ -25,8 +26,49 @@
 				<source src="media/home.mp3" type="audio/mpeg">
 			</audio>
 			<div id="now-playing"><div><span>Now Playing: This Must Be The Place - Sure Sure</span><span>Now Playing: This Must Be The Place - Sure Sure</span></div></div>
-			<p class="subtitle"><span>About Us</span></p>
-			<p class="subtitle"><span>About Them</span></p>
+			<p class="subtitle"><span>ABOUT US</span></p>
+            <div class="slideshow">
+                <div class="slide-arrow" onclick="prev_slide('about_us')"><p><-</p></div>
+                <div class="about_us_slide">
+                    <img src="media/cat-tree.jpg" class="slide-image" />
+                    <div class="slide-text"> Lorem ipsum todo. This actually has to be pretty long in order to effectively evaluate whether the look is right or not. Three sentences should be good, though.</div>
+                </div>
+                <div class="about_us_slide">
+                    <img src="media/names.png" class="slide-image" />
+                    <div class="slide-text"> Lorem ipsum todo. This actually has to be pretty long in order to effectively evaluate whether the look is right or not. Three sentences should be good, though.</div>
+                </div>
+                <div class="about_us_slide">
+                    <img src="media/hamster_dance.gif" class="slide-image" />
+                    <div class="slide-text"> Lorem ipsum todo. This actually has to be pretty long in order to effectively evaluate whether the look is right or not. Three sentences should be good, though.</div>
+                </div>
+                <div class="about_us_slide">
+                    <img src="media/our-song.gif" class="slide-image" />
+                    <div class="slide-text"> Lorem ipsum todo. This actually has to be pretty long in order to effectively evaluate whether the look is right or not. Three sentences should be good, though.</div>
+                </div>
+                <div class="slide-arrow" onclick="next_slide('about_us')"><p>-></p></div>
+            </div>
+
+			<p class="subtitle"><span>ABOUT THEM</span></p>
+            <div class="slideshow">
+                <div class="slide-arrow" onclick="prev_slide('about_them')"><p><-</p></div>
+                <div class="about_them_slide">
+                    <img src="media/cat-tree.jpg" class="slide-image" />
+                    <div class="slide-text"> Lorem ipsum todo. This actually has to be pretty long in order to effectively evaluate whether the look is right or not. Three sentences should be good, though.</div>
+                </div>
+                <div class="about_them_slide">
+                    <img src="media/names.png" class="slide-image" />
+                    <div class="slide-text"> Lorem ipsum todo. This actually has to be pretty long in order to effectively evaluate whether the look is right or not. Three sentences should be good, though.</div>
+                </div>
+                <div class="about_them_slide">
+                    <img src="media/hamster_dance.gif" class="slide-image" />
+                    <div class="slide-text"> Lorem ipsum todo. This actually has to be pretty long in order to effectively evaluate whether the look is right or not. Three sentences should be good, though.</div>
+                </div>
+                <div class="about_them_slide">
+                    <img src="media/our-song.gif" class="slide-image" />
+                    <div class="slide-text"> Lorem ipsum todo. This actually has to be pretty long in order to effectively evaluate whether the look is right or not. Three sentences should be good, though.</div>
+                </div>
+                <div class="slide-arrow" onclick="next_slide('about_them')"><p>-></p></div>
+            </div>
 		</div>
 	</body>
 </html>
