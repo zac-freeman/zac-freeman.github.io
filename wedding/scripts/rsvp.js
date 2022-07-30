@@ -16,31 +16,31 @@ function rsvp(first_names, last_names, responses, song_requests) {
 		{
 			'firstName': first_names[i],
 			'lastName': last_names[i],
-			'invitations': [{'rsvp': (responses[i] === 'accept'), 'eventId': 'ddc138bc-46a7-40c8-81b3-68aef2ee5bd3'}]
+			'invitations': [{'rsvp': (responses[i] === 'accept'), 'eventId': '2b948eee-8709-4a3e-9240-6095c5a9bd7c'}]
 		};
 		guests.push(guest);
 	}
 
 	const body =
 	{
-		'weddingId': '00bf6d56-8d6e-4935-9be7-0609868f33ef',
+		'weddingId': 'dae9d257-3f3a-4257-8d36-01437fc44bef',
 		'people': guests,
 		'answers':
 		[
 			{
-				'questionId': 'bd3230c0-eb30-44fb-8740-d96e48f51a63',
+				'questionId': 'bb99d2ea-2ac3-459d-a334-680cbf584560',
 				'text': song_requests
 			}
 		]
 	};
 
-	const url = 'https://api.guests.xogrp.com/v1/weddings/00bf6d56-8d6e-4935-9be7-0609868f33ef/households';
+	const url = 'https://api.guests.xogrp.com/v1/weddings/dae9d257-3f3a-4257-8d36-01437fc44bef/households';
 	const headers = 
 	{
 		'Accept': 'application/json, text/plain, */*',
 		'Accept-Encoding': 'gzip, deflate, br',
 		'Content-Type': 'application/json;charset=utf-8',
-		'X-MEMBER-UUID': 'de14538b-7394-42a2-9853-f3b40a51953d',
+		'X-MEMBER-UUID': '236ca74d-69b5-4d0d-bb80-a69a89c07b6f',
 		'X-API-KEY': 'cb19a1a448292169c09eb9730499a08f38149c749270d99676eb7edf3cc69b5f'
 	};
 	const options = { 'method': 'POST', 'headers': headers, 'body': JSON.stringify(body), 'mode': 'cors' };
