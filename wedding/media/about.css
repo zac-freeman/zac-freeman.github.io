@@ -67,7 +67,6 @@ span {
 .slideshow {
     width: 100%;
     display: flex;
-    min-height: 220px;
 }
 
 .about_us_slide, .about_them_slide {
@@ -75,6 +74,7 @@ span {
     width: auto;
     padding: 4px;
 	background-color: rgba(255, 251, 235, 0.8);
+    min-height: 222px;
 }
 
 .slide-text {
@@ -83,6 +83,10 @@ span {
     display: inline-block;
     float: right;
     width: 65%;
+}
+
+.slide-title {
+    font-weight: bold;
 }
 
 .slide-image {
@@ -98,6 +102,6 @@ span {
     color: var(--soft-black);
 	background-color: rgba(255, 251, 235, 0.8);
     font-weight: bold;
-    font-size: 20px;
+    font-size: 32px;
     user-select: none;
 }
