@@ -11,13 +11,41 @@
 	--soft-black: #313639;
 }
 
+@font-face {
+	font-family: "Theano Didot";
+	src: url("../media/theano-didot.ttf");
+}
+
+@font-face {
+	font-family: "Des Morgan";
+	src: url("../media/des-morgan.otf");
+}
+
+@font-face {
+	font-family: "Khatija";
+	src: url("../media/khatija.otf");
+}
+
 body {
     margin: 0;
 	background-color: var(--beige);
 	text-align: center;
-	font-family: 'Times New Roman', Serif;
+}
+
+body, button, input, textarea {
+	font-family: 'Theano Didot', serif;
+    font-size: 20px;
 }
 
 p {
 	color: var(--soft-black);
+}
+
+a {
+    color: inherit;
+}
+
+.title, .subtitle {
+    font-family: "Des Morgan", serif;
+    letter-spacing: 5px;
 }

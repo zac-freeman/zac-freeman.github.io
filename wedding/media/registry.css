@@ -13,8 +13,10 @@ p {
 	text-align: left;
 }
 
-#title {
-	font-size: min(10vw, 40px);
+.title {
+	font-size: min(20vw, 84px);
+    margin-top: 40px;
+    margin-bottom: 0;
 }
 
 #registry-list {
@@ -27,7 +29,7 @@ p {
 .card {
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	width: 400px;
-	height: 400px;
+	min-height: 400px;
 	padding: 10px;
 	margin: 10px;
 	border: 2px solid var(--diamond);

@@ -34,6 +34,7 @@ body {
 #sapp-house p {
     margin: 0;
     font-size: min(6vw, 36px);
+    font-family: "Khatija", serif;
 }
 
 .bottom-text {

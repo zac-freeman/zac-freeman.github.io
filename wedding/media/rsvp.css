@@ -5,15 +5,8 @@ body {
 	background-repeat: no-repeat, repeat-y;
 }
 
-p, label, textarea {
-	font-family: "Poiret One", serif;
-	font-weight: bold;
+p, label, textarea, input:not([type=submit]) {
 	color: var(--deep-teal);
-}
-
-button, input {
-	font-family: "Poiret One", serif;
-	font-weight: bold;
 }
 
 textarea {
@@ -32,16 +25,11 @@ textarea {
 
 #title-container {
 	text-align: center;
-    margin-bottom: 80px;
 }
 
 #title-container p {
-	font-size: min(25vw, 125px);
+	font-size: min(35vw, 147px);
 	margin: 0;
-}
-
-#instructions {
-	font-size: 20px;
 }
 
 .options {
@@ -63,9 +51,4 @@ textarea {
 	background-color: var(--diamond);
 	padding: 5px 0 0 5px;
 	border: 5px solid var(--ruby);
-}
-
-@font-face {
-	font-family: "Poiret One";
-	src: url("../media/poiret-one.ttf");
 }

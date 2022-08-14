@@ -9,7 +9,7 @@ LOCATION("about.html")
 	</head>
 	<body>
 		DEPENDENCY("header")
-		<p id="title"><span>WELCOME TO OUR WEDDING</span></p>
+		<p class="title"><span>WELCOME TO OUR WEDDING</span></p>
 		<div id="about-content">
 			<div><img src="media/our-song.gif" id="our-song"/></div>
 			<audio controls autoplay>
@@ -18,7 +18,6 @@ LOCATION("about.html")
 			<div id="now-playing"><div><span>Now Playing: This Must Be The Place - Sure Sure</span><span>Now Playing: This Must Be The Place - Sure Sure</span></div></div>
 			<p class="subtitle"><span>ABOUT US</span></p>
             <div class="slideshow">
-                <div class="slide-arrow" onclick="prev_slide('about_us')"><p><<br><<br><</p></div>
                 <div class="about_us_slide">
                     <img src="media/us-1.jpg" class="slide-image" />
                     <div class="slide-text"> Lorem ipsum todo. This actually has to be pretty long in order to effectively evaluate whether the look is right or not. Three sentences should be good, though.</div>
@@ -35,12 +34,14 @@ LOCATION("about.html")
                     <img src="media/us-4.jpg" class="slide-image" />
                     <div class="slide-text"> Lorem ipsum todo. This actually has to be pretty long in order to effectively evaluate whether the look is right or not. Three sentences should be good, though.</div>
                 </div>
-                <div class="slide-arrow" onclick="next_slide('about_us')"><p>><br>><br>></p></div>
+            </div>
+            <div class="buttons">
+                <button onclick="prev_slide('about_us')">Prev</button>
+                <button onclick="next_slide('about_us')">Next</button>
             </div>
 
-			<p class="subtitle"><span>ABOUT THEM</span></p>
+            <p class="subtitle"><span>ABOUT OUR<br>WEDDING PARTY</span></p>
             <div class="slideshow">
-                <div class="slide-arrow" onclick="prev_slide('about_them')"><p><<br><<br><</p></div>
                 <div class="about_them_slide">
                     <img src="media/madison.jpg" class="slide-image" />
                     <div class="slide-text">
@@ -123,14 +124,13 @@ LOCATION("about.html")
                     </div>
                 </div>
                 <div class="about_them_slide">
-                    <img src="media/lauren.jpg" class="slide-image" />
+                    <img src="media/minnie.jpg" class="slide-image" />
                     <div class="slide-text">
-                        <p class="slide-title">Lauren Fernandez</p>
-                        <p>Savannah and Lauren met each other way too late in life but are doing a
-                        great job of making up for lost time. They enjoy doing crafts together,
-                        playing board games and eating Taco Bell. Lauren is a writer, baker and
-                        thrifter currently obtaining her bachelor’s in communications and
-                        journalism.</p>
+                        <p class="slide-title">Minnie Kinard</p>
+                        <p>Minnie and Savannah met in Panama City, FL. In just six months of living
+                        together, they managed to experience a lifetime’s worth of karaoke, dancing,
+                        costume-wearing and crying. Minnie is an avid world-traveler, lover of the
+                        finer things and intense hype woman pursuing a career in psychology.</p>
                     </div>
                 </div>
                 <div class="about_them_slide">
@@ -143,16 +143,20 @@ LOCATION("about.html")
                     </div>
                 </div>
                 <div class="about_them_slide">
-                    <img src="media/minnie.jpg" class="slide-image" />
+                    <img src="media/lauren.jpg" class="slide-image" />
                     <div class="slide-text">
-                        <p class="slide-title">Minnie Kinard</p>
-                        <p>Minnie and Savannah met in Panama City, FL. In just six months of living
-                        together, they managed to experience a lifetime’s worth of karaoke, dancing,
-                        costume-wearing and crying. Minnie is an avid world-traveler, lover of the
-                        finer things and intense hype woman pursuing a career in psychology.</p>
+                        <p class="slide-title">Lauren Fernandez</p>
+                        <p>Savannah and Lauren met each other way too late in life but are doing a
+                        great job of making up for lost time. They enjoy doing crafts together,
+                        playing board games and eating Taco Bell. Lauren is a writer, baker and
+                        thrifter currently obtaining her bachelor’s in communications and
+                        journalism.</p>
                     </div>
                 </div>
-                <div class="slide-arrow" onclick="next_slide('about_them')"><p>><br>><br>></p></div>
+            </div>
+            <div class="buttons">
+                <button onclick="prev_slide('about_them')">Prev</button>
+                <button onclick="next_slide('about_them')">Next</button>
             </div>
 		</div>
 	</body>
