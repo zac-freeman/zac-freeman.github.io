@@ -11,7 +11,9 @@ LOCATION("rsvp.html")
 		DEPENDENCY("header")
         <div id='rsvp-content'>
             <div id="title-container"><p class="title">RSVP</p></div>
-            <p id='instructions'>Please provide your name below, and indicate whether or not you will be able to attend our wedding. You may RSVP on behalf of members of your family unit that have also been invited to our wedding. Please do not RSVP on behalf of someone that has not been invited. Please do not RSVP on behalf of someone that you do not know.</p>
+            <p id='instructions'>Please provide your name below, and indicate whether or not you
+            will be able to attend our wedding. You may RSVP on behalf of members of your party that
+            were included on your invitation. Please do not RSVP on behalf of someone that has not been invited. Please do not RSVP on behalf of someone that you do not know.</p>
             <form id='rsvp_form' onsubmit='rsvp(get_values(first_names), get_values(last_names), get_responses(this), song_requests.value); return false;'>
                 <div id='guest_list'>
 					<input type='text' name='first_names' placeholder='First name' size='10' required> 

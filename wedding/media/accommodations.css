@@ -1,0 +1,42 @@
+body {
+	background-color: var(--diamond);
+}
+
+#map {
+    margin: auto;
+    padding: 10px;
+    max-width: 1000px;
+}
+
+#content {
+	margin: auto;
+	padding: 10px;
+	max-width: 600px;
+	text-align: center;
+}
+
+#sapp-house-link {
+    text-decoration: none;
+}
+
+#sapp-house-link p {
+    margin-bottom: -24px;
+}
+
+#sapp-house {
+    font-family: "Khatija", serif;
+}
+
+.header-text {
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.bottom-text {
+    letter-spacing: 2px;
+}
+
+.map {
+	width: 90%;
+	height: 400px;
+}
