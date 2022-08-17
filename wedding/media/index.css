@@ -35,6 +35,7 @@ body {
     margin: 0;
     font-size: min(6vw, 36px);
     font-family: "Khatija", serif;
+    margin-bottom: -24px;
 }
 
 .bottom-text {
