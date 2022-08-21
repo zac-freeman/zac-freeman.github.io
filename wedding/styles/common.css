@@ -13,17 +13,17 @@
 
 @font-face {
 	font-family: "Theano Didot";
-	src: url("../media/theano-didot.ttf");
+	src: url("../fonts/theano-didot.ttf");
 }
 
 @font-face {
 	font-family: "Des Morgan";
-	src: url("../media/des-morgan.otf");
+	src: url("../fonts/des-morgan.otf");
 }
 
 @font-face {
 	font-family: "Khatija";
-	src: url("../media/khatija.otf");
+	src: url("../fonts/khatija.otf");
 }
 
 body {
