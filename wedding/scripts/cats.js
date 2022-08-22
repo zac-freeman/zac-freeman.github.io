@@ -27,7 +27,7 @@ var nelly = new Cat("nelly");
 var boots = new Cat("boots");
 
 function draw_cats() {
-    var leash = 60;
+    var leash = 70;
 
     if (((boots.x - mouse.x)**2 + (boots.y - mouse.y)**2) > leash**2) {
         boots.x += 0.1 * (mouse.x - boots.x);
