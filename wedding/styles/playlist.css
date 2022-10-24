@@ -1,0 +1,25 @@
+body {
+	background-color: var(--diamond);
+}
+
+#thanks-for-coming {
+    width: 100%;
+}
+
+#content {
+	margin: auto;
+	padding: 10px;
+	max-width: 600px;
+	text-align: left;
+}
+
+#playlist-title {
+    margin: 0;
+    font-size: 24pt;
+    font-family: "Khatija", serif;
+    margin-bottom: -36px;
+}
+
+#playlist {
+    list-style: none;
+}
