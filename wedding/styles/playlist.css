@@ -15,11 +15,16 @@ body {
 
 #playlist-title {
     margin: 0;
-    font-size: 24pt;
+	font-size: min(8vw, 48px);
     font-family: "Khatija", serif;
     margin-bottom: -36px;
 }
 
 #playlist {
-    list-style: none;
+    list-style: hebrew;
+}
+
+#playlist li {
+    padding-bottom: 10px;
+    line-height: 1;
 }
