@@ -1,0 +1,17 @@
+x-common: &common
+  image: perl:5
+  volumes:
+    - .:/workspace:z
+  working_dir: /workspace
+
+services:
+  shell:
+    <<: *common
+    stdin_open: true
+    tty: true
+    entrypoint: /bin/bash
+
+  update:
+    <<: *common
+    entrypoint: /bin/bash -c "./html-make.pl templates . && ./html-make.pl wedding/templates wedding"
+
