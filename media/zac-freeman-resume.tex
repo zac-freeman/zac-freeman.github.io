@@ -4,35 +4,27 @@
 
 \documentclass{resume} % Use the custom resume.cls style
 
+\usepackage{textcomp}
 \usepackage{enumitem}
 \setitemize{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt,label={-}}
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\newcommand{\normaltilde}{\raisebox{0.5ex}{\texttildelow}}
 \address{Zac Freeman \hfill}
-\address{zpf14@my.fsu.edu \hfill}
+\address{me@zac-freeman.com \hfill}
 
 \begin{document}
-
-\begin{rSection}{Education}
-    {\bf B.S. in Physics \textbar\ Florida State University \hfill August 2014 - December 2017}
-    \begin{itemize}
-        \item GPA: 3.889
-        \item Minor: Mathematics
-        \item Additional Coursework: Data Structures and Algorithms, Partial Differential Equations, Communication in Physics
-    \end{itemize}
-\end{rSection}
 
 \begin{rSection}{Experience}
     {\bf Systems Engineer \textbar\ AutoZone \hfill January 2020 - Present}
     \begin{itemize}
+        \item Automated a manual provisioning process for OAuth clients with a GitOps system that managed the entire request lifecycle and provided a secure, auditable platform for AI-generated changes
+        \item Led the transformation of a shared Gitlab CI/CD pipeline project from a single-purpose Java deployment tool to the enterprise-standard product for securely deploying any application to any environment
+        \item Built a comprehensive automated test suite for our Gitlab CI/CD pipelines with a focus on easy extensibility to accelerate development without sacrificing reliability as the product surface scaled to \normaltilde50 pipeline types, multiple active versions, and over 2000 end-user Gitlab projects
+        \item Rescued a project to replace the employee self-service site for 140,000 employees, releasing a working product on-schedule
         \item Updated a custom Qt/C++ time clocking software to prompt employees with surveys to meet California payroll compliance, recovering \$2,000,000 a year in penalties
-        \item Hardened C++ payment processing software handling \$5B a year across 20,000 devices
-        \item Served as the final reviewer for large changes ($\sim$10,000 lines) to the C++ software in the stores
-        \item Collected, analyzed, and presented the performance impact of introducing Docker to the store environment using Bash, Perl, and \LaTeX, respectively
-        \item Used Python to enable internal dependency management and automate integration testing for build and deploy pipelines
-        \item Trained a cohort of incoming systems engineers to traverse and troubleshoot a network of systems running a custom Linux distribution
-        \item Increased visibility into store systems by configuring rsyslog and Filebeat to upload events from the registers to a central server
+        \item Performed the duties of contributor, reviewer, and trainer for C++ payment processing software handling \$5B a year across 20,000 devices
     \end{itemize}
 
     {\bf Software Developer II \textbar\ Frontdoor \hfill October 2018 - December 2019}
@@ -56,10 +48,18 @@
     \end{itemize}
 \end{rSection}
 
+\begin{rSection}{Education}
+    {\bf B.S. in Physics \textbar\ Florida State University \hfill August 2014 - December 2017}
+    \begin{itemize}
+        \item GPA: 3.889
+        \item Minor: Mathematics
+    \end{itemize}
+\end{rSection}
+
 \begin{rSection}{Skills}
     \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-    Languages & C++, Python, \LaTeX, CUDA, MATLAB, Perl, Javascript, Redstone \\
-    Software & Linux, Qt, git, Docker \\
+    Languages & C++, Python, \LaTeX, Bash, Javascript, Redstone \\
+    Software & Linux, Qt, git, Docker, Gitlab CI/CD, Google ADK \\
     \end{tabular}
 \end{rSection}
 
